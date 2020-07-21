@@ -81,7 +81,7 @@ var ajaxCall;
 					$('#status').html("STATUS : <span id='checkStatus' style='color:#fff;' class='bg-primary'>RUN</span>");			
 				},
 				headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
-				data: 'mailpass='+encodeURIComponent(lstMP[curMP])+'&delim='+encodeURIComponent(delim)+'&name='+checker+'&price='+price,
+				data: 'mailpass='+encodeURIComponent(lstMP[curMP])+'&delim='+encodeURIComponent(delim),
 				success: function(data) {
 					switch(data.error){
 						case -1:
